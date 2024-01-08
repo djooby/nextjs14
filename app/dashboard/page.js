@@ -1,5 +1,8 @@
-import React from "react";
+"use client";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
-export default function Dashboard() {
-  return <div>Dashboard</div>;
+export default function Home() {
+  const router = useRouter();
+  return <Button onClick={() => router.push("/")}>Go back home</Button>;
 }
